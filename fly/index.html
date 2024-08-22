@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKYHIGHT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <nav
+      class="fixed font-semibold isolate top-0 w-full z-[9] md:static md:py-8 md:px-4 md:max-w-[--max-width] md:m-auto md:flex md:items-center md:justify-between md:gap-8"
+    >
+      <div
+        class="nav__header p-4 w-full flex items-center justify-between bg-[--primary-color] md:flex-1 md:p-0 md:bg-transparent"
+      >
+        <div class="nav__logo">
+          <a
+            href="#"
+            class="logo text-4xl font-extrabold text-[--white] md:text-[--text-dark]"
+            >Skywings</a
+          >
+        </div>
+        <div
+          class="nav__menu__btn text-2xl text-[--white] pointer md:hidden"
+          id="menu-btn"
+        >
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul
+        class="nav__links absolute bottom-0 left-0 w-full p-8 flex items-center justify-center flex-col gap-8 bg-[--primary-color] transition-transform -z-[1] [&_a:hover]:text-[--text-dark] [&_a]:text-[--white] [&_a]:text-nowrap md:static md:w-fit md:p-0 md:flex-row md:bg-transparent md:!transform-none md:[&_a:hover]:text-[--primary-color] md:[&_a]:text-[--text-dark] md:[&>li:last-child]:hidden md:static md:w-fit md:p-0 md:flex-row md:bg-transparent md:!transform-none md:[&_a:hover]:text-[--primary-color] md:[&_a]:text-[--text-dark] md:[&>li:last-child]:hidden"
+        id="nav__links"
+      >
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#package">PACKAGE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#">BOOK TRIP</a></li>
+      </ul>
+      <div class="nav__btns hidden md:flex-1 md:flex md:justify-end">
+        <button
+          class="btn text-[--white] p-[0.75rem_2rem] rounded-full bg-[--text-dark] hover:bg-[--primary-color]"
+        >
+          BOOK TRIP
+        </button>
+      </div>
+    </nav>
+
+    <header
+      id="home"
+      class="mt-[5rem] p-[1rem] relative isolate overflow-hidden md:mt-0"
+    >
+      <div class="h-fit w-full">
+        <div
+          class="header__container grid md:grid-cols-5 max-w-[--max-width] mx-auto"
+        >
+          <div
+            class="header__content p-[4rem_1rem] md:col-span-2 md:p-[8rem_1rem]"
+          >
+            <p class="mb-1 text-lg text-[--text-dark] text-center md:text-left">
+              ELEVATE YOUR TRAVEL JOURNEY
+            </p>
+            <h1
+              class="mb-8 text-7xl font-semibold text-[--text-dark] text-center md:text-left leading-[5.5rem]"
+            >
+              Experience The Magic Of Flight!
+            </h1>
+            <div
+              class="header__btns group flex items-center justify-center gap-4 md:justify-start"
+            >
+              <button class="btn px-8 py-4">Book A Trip Now</button>
+              <a
+                href="#"
+                class="p-[9px_13px] text-2xl text-[--primary-color] bg-[--white] rounded-full group-hover:text-[--white] group-hover:bg-[--primary-color]"
+              >
+                <span><i class="ri-play-circle-fill"></i></span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="header__image md:col-span-3 md:relative md:isolate md:h-full"
+          >
+            <img
+              src="assets/header.png"
+              class="md:absolute md:top-8 md:left-0 md:h-full w-full"
+              alt="header"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="about">
+      <h2 class="section__header text-left ms-[unset]">Popular Destination</h2>
+      <p class="section__description text-left ms-[unset]">
+        Discover the Most Loved Destinations Around the Globe
+      </p>
+      <div
+        class="destination__grid mt-16 grid gap-[2rem_1rem] sm:grid-cols-2 md:grid-cols-3 lg:gap-8"
+      >
+        <div class="destination__card group rounded-lg shadow-lg">
+          <img
+            src="assets/destination-1.jpg"
+            alt="destination"
+            class="rounded-3xl shadow-[5px_5px_20px_rgba(0,0,0,0.2)]"
+          />
+          <div
+            class="destination__card__details p-4 flex items-center justify-between gap-4"
+          >
+            <div>
+              <h4 class="mb-[5px] text-xl font-semibold columns-[--text-dark]">
+                Tradition and Futurism
+              </h4>
+              <p class="columns-[--text-light]">New York City, USA</p>
+            </div>
+            <div
+              class="destination__rating p-[5px_10px] text-lg whitespace-nowrap text-[--white] bg-[--primary-color] rounded-2xl transition-all duration-[0.3s] group-hover:bg-[--primary-color]"
+            >
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card group rounded-lg shadow-lg">
+          <img
+            src="assets/destination-2.jpg"
+            alt="destination"
+            class="rounded-lg shadow-[5px_5px_20px_rgba(0,0,0,0.2)]"
+          />
+          <div
+            class="destination__card__details p-4 flex items-center justify-between gap-4"
+          >
+            <div>
+              <h4 class="mb-[5px] text-xl font-semibold columns-[--text-dark]">
+                The City of Lights
+              </h4>
+              <p class="columns-[--text-light]">Paris, France</p>
+            </div>
+            <div
+              class="destination__rating p-[5px_10px] text-lg whitespace-nowrap text-[--white] bg-[--primary-color] rounded-2xl transition-all duration-[0.3s] group-hover:bg-[--primary-color]"
+            >
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card group rounded-lg shadow-lg">
+          <img
+            src="assets/destination-3.jpg"
+            alt="destination"
+            class="rounded-lg shadow-[5px_5px_20px_rgba(0,0,0,0.2)]"
+          />
+          <div
+            class="destination__card__details p-4 flex items-center justify-between gap-4"
+          >
+            <div>
+              <h4 class="mb-[5px] text-xl font-semibold columns-[--text-dark]">
+                Island of the Gods
+              </h4>
+              <p class="columns-[--text-light]">Bali, Indonesia</p>
+            </div>
+            <div
+              class="destination__rating p-[5px_10px] text-lg whitespace-nowrap text-[--white] bg-[--primary-color] rounded-2xl transition-all duration-[0.3s] group-hover:bg-[--primary-color]"
+            >
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header">Journey To The Sky Made Simple!</h2>
+      <p class="section__description">
+        Effortless Planning for Your Next Adventure
+      </p>
+
+      <div class="journey__grid mt-8 grid gap-4 grid-cols-2 md:grid-cols-3">
+        <div class="journey__card group relative isolate pt-16 overflow-hidden">
+          <div class="journey__card__bg p-8 bg-[--extra-light] rounded-t-2xl">
+            <span class="inline-block mb-16 text-2xl text-[--primary-color]"
+              ><i class="ri-bookmark-3-line"></i
+            ></span>
+            <h4 class="text-xl font-semibold text-[--text-dark]">
+              Seamless Booking Process
+            </h4>
+          </div>
+          <div
+            class="journey__card__content group-hover:top-0 absolute top-full left-0 size-full p-8 bg-[--primary-color] rounded-t-2xl duration-[0.3s]"
+          >
+            <span
+              class="inline-block mb-4 p-[7px_9px] text-base text-[--white] border-2 border-white rounded-full"
+              ><i class="ri-bookmark-3-line"></i
+            ></span>
+            <h4 class="mb-4 text-lg text-[--white]">
+              Easy Reservations, One Click Away
+            </h4>
+            <p class="text-[--extra-light]">
+              From flights and accommodations to activities and transfers,
+              everything you need is available at your fingertips, making travel
+              planning effortless.
+            </p>
+          </div>
+        </div>
+
+        <div class="journey__card group relative isolate pt-16 overflow-hidden">
+          <div class="journey__card__bg p-8 bg-[--extra-light] rounded-t-2xl">
+            <span class="inline-block mb-16 text-2xl text-[--primary-color]"
+              ><i class="ri-landscape-fill"></i
+            ></span>
+            <h4 class="text-xl font-semibold text-[--text-dark]">
+              Tailored Itineraries
+            </h4>
+          </div>
+          <div
+            class="journey__card__content group-hover:top-0 absolute top-full left-0 size-full p-8 bg-[--primary-color] rounded-t-2xl duration-300"
+          >
+            <span
+              class="inline-block mb-4 p-[7px_9px] text-base text-[--white] border-2 border-white rounded-full"
+              ><i class="ri-landscape-fill"></i
+            ></span>
+            <h4 class="text-lg font-semibold text-[--white]">
+              Customized Plans Just for You
+            </h4>
+            <p class="text-[--extra-light]">
+              Enjoy personalized travel plans designed to match your preferences
+              and interests. Whether you seek adventure or cultural immersion,
+              our tailored itineraries ensure your journey is uniquely yours.
+            </p>
+          </div>
+        </div>
+
+        <div class="journey__card group relative isolate pt-16 overflow-hidden">
+          <div class="journey__card__bg p-8 bg-[--extra-light] rounded-t-2xl">
+            <span class="inline-block mb-16 text-2xl text-[--primary-color]"
+              ><i class="ri-map-2-line"></i
+            ></span>
+            <h4 class="text-xl font-semibold text-[--text-dark]">
+              Expert Local Insights
+            </h4>
+          </div>
+          <div
+            class="journey__card__content group-hover:top-0 absolute top-full left-0 size-full p-8 bg-[--primary-color] rounded-t-2xl duration-300"
+          >
+            <span
+              class="inline-block mb-4 p-[7px_9px] text-base text-[--white] border-2 border-white rounded-full"
+              ><i class="ri-map-2-line"></i
+            ></span>
+            <h4 class="text-xl font-semibold text-[--white]">
+              Insider Tips and Recommendations
+            </h4>
+            <p class="text-[--extra-light]">
+              We provide curated recommendations for dining, sightseeing, and
+              hidden gems, so you can experience each destination like a local.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section__container showcase__container grid gap-8 overflow-hidden sm:grid-cols-2 md:grid-cols-3"
+      id="package"
+    >
+      <div class="showcase__image">
+        <img
+          src="assets/showcase.jpg"
+          class="col-span-1 m-auto shadow-[5px_5px_20px_rgba(0,0,0,0.2)]"
+          alt="showcase"
+        />
+      </div>
+      <div class="showcase__content col-span-1 md:col-span-2">
+        <h4 class="mb-8 text-5xl font-semibold text-[--text-dark]">
+          UNLEASH WANDERLUST WITH SKYWINGS
+        </h4>
+        <p class="mb-4 text-[--text-light]">
+          Embark on a journey like no other with Skywings, where your travel
+          dreams come to life. Our mission is to inspire and facilitate your
+          adventures, whether you seek the vibrant energy of bustling
+          cityscapes, the serene beauty of pristine beaches, or the captivating
+          history of ancient landmarks. At Skywings, we provide expertly curated
+          destinations and personalized itineraries, ensuring that every trip is
+          tailored to your unique preferences. Discover hidden gems, immerse
+          yourself in diverse cultures, and create unforgettable memories that
+          will last a lifetime.
+        </p>
+        <p class="mb-4 text-[--text-light]">
+          With Skywings as your ultimate travel companion, exploring the wonders
+          of the world has never been easier. Our insider tips and local
+          insights give you the tools to navigate new places with confidence and
+          excitement. From the moment you start planning to the day you return
+          home, we are dedicated to making your travel experience seamless and
+          enriching.
+        </p>
+        <div class="showcase__btn">
+          <button class="btn w-full mt-8 font-semibold p-6 text-[--text-dark]">
+            Book A Flight Now
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section__container banner__container grid gap-8 grid-cols-2 md:grid-cols-3"
+    >
+      <div
+        class="banner__card px-4 py-8 text-center bg-[--extra-light] rounded-2xl shadow-[5px_5px_20px_rgba(rgba(0,0,0,0.1))]"
+      >
+        <h4 class="text-7xl font-semibold text-[--primary-color]">10+</h4>
+        <p class="text-[--text-light]">Years Experience</p>
+      </div>
+      <div
+        class="banner__card px-4 py-8 text-center bg-[--extra-light] rounded-2xl shadow-[5px_5px_20px_rgba(rgba(0,0,0,0.1))]"
+      >
+        <h4 class="text-7xl font-semibold text-[--primary-color]">12K</h4>
+        <p class="text-[--text-light]">Happy Clients</p>
+      </div>
+      <div
+        class="banner__card px-4 py-8 text-center bg-[--extra-light] rounded-2xl shadow-[5px_5px_20px_rgba(rgba(0,0,0,0.1))]"
+      >
+        <h4 class="text-7xl font-semibold text-[--primary-color]">4.8</h4>
+        <p class="text-[--text-light]">Overall Ratings</p>
+      </div>
+    </section>
+
+    <section class="section__container discover__container">
+      <h2 class="section__header">Discover The World From Above</h2>
+      <p class="section__description">
+        Experience Breathtaking Views and Unique Perspectives
+      </p>
+      <div
+        class="discover__grid mt-16 grid gap-8 sm:grid-cols-2 md:grid-cols-3"
+      >
+        <div
+          class="discover__card py-8 px-4 text-center duration-300 rounded-2xl hover:bg-[rgba(40,135,255,0.1)]"
+        >
+          <span
+            class="inline-block mb-4 p-[10px_15px] text-2xl text-[--primary-color] bg-[rgba(40,135,255,0.1)] rounded-full"
+            ><i class="ri-camera-lens-line"></i
+          ></span>
+          <h4
+            class="max-w-[150px] ms-auto me-auto mb-4 text-xl font-bold text-[--text-dark]"
+          >
+            Aerial Cityscapes
+          </h4>
+          <p>
+            Witness the architectural marvels and bustling streets from
+            bird's-eye view, offering a unique perspective.
+          </p>
+        </div>
+        <div
+          class="discover__card py-8 px-4 text-center duration-300 rounded-2xl hover:bg-[rgba(40,135,255,0.1)]"
+        >
+          <span
+            class="inline-block mb-4 p-[10px_15px] text-2xl text-[--primary-color] bg-[rgba(40,135,255,0.1)] rounded-full"
+            ><i class="ri-ship-line"></i
+          ></span>
+          <h4
+            class="max-w-[150px] ms-auto me-auto mb-4 text-xl font-bold text-[--text-dark]"
+          >
+            Coastal Wonders
+          </h4>
+          <p>
+            Fly over pristine coastlines and turquoise waters, revealing hidden
+            coves and vibrant coral reefs.
+          </p>
+        </div>
+        <div
+          class="discover__card py-8 px-4 text-center duration-300 rounded-2xl hover:bg-[rgba(40,135,255,0.1)]"
+        >
+          <span
+            class="inline-block mb-4 p-[10px_15px] text-2xl text-[--primary-color] bg-[rgba(40,135,255,0.1)] rounded-full"
+            ><i class="ri-landscape-line"></i
+          ></span>
+          <h4
+            class="max-w-[150px] ms-auto me-auto mb-4 text-xl font-bold text-[--text-dark]"
+          >
+            Historic Landmarks
+          </h4>
+          <p>
+            Observe the grandeur of ancient castles and other significant sites
+            in a way that ground tours can't offer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container">
+      <h2 class="section__header">Loved By Over Thousand Travelers</h2>
+      <p class="section__description">
+        Discover the stories of wanderlust and cherished memories through the
+        eyes of our valued clients.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper mt-16 w-full">
+        <!-- Additional required wrapper -->
+        <div
+          class="swiper-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Slides -->
+          <div class="swiper-slide col-span-1">
+            <div
+              class="client__card [&:hover_h4]:text-[--white] [&:hover_h5]:text-[--extra-light] p-[5px] bg-[--extra-light] rounded-2xl duration-300 hover:bg-[--primary-color]"
+            >
+              <div class="client__content p-4 bg-[--white] rounded-xl">
+                <div class="client__rating mb-4 text-[--primary-color]">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p class="text-[--text-dark]">
+                  Skywings has completely transformed my travel experience. From
+                  finding hidden gems in bustling cities to discovering serene
+                  retreats off the beaten path, every detail was thoughtfully
+                  arranged. I can't recommend Skywings enough for anyone looking
+                  to elevate their travel experience!
+                </p>
+              </div>
+              <div class="client__details p-4 flex items-center gap-4">
+                <img
+                  src="assets/client-1.jpg"
+                  class="max-w-[50px] rounded-full"
+                  alt="client"
+                />
+                <div>
+                  <h4
+                    class="text-lg font-semibold text-[--text-dark] duration-300"
+                  >
+                    John Adams
+                  </h4>
+                  <h5
+                    class="text-base font-medium text-[--text-light] duration-300"
+                  >
+                    Travel Blogger
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-span-1">
+            <div
+              class="client__card [&:hover_h4]:text-[--white] [&:hover_h5]:text-[--extra-light] p-[5px] bg-[--extra-light] rounded-2xl duration-300 hover:bg-[--primary-color]"
+            >
+              <div class="client__content p-4 bg-[--white] rounded-xl">
+                <div class="client__rating mb-4 text-[--primary-color]">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p class="text-[--text-dark]">
+                  My recent adventure with Skywings was nothing short of
+                  spectacular. The personalized itineraries and recommendations
+                  they provided led me to extraordinary locations that I would
+                  never have found on my own. I'm already planning my next
+                  adventure with them!
+                </p>
+              </div>
+              <div class="client__details p-4 flex items-center gap-4">
+                <img
+                  src="assets/client-2.jpg"
+                  class="max-w-[50px] rounded-full"
+                  alt="client"
+                />
+                <div>
+                  <h4
+                    class="text-lg font-semibold text-[--text-dark] duration-300"
+                  >
+                    Emily Thompson
+                  </h4>
+                  <h5
+                    class="text-base font-medium text-[--text-light] duration-300"
+                  >
+                    Adventure Enthusiast
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-span-1">
+            <div
+              class="client__card [&:hover_h4]:text-[--white] [&:hover_h5]:text-[--extra-light] p-[5px] bg-[--extra-light] rounded-2xl duration-300 hover:bg-[--primary-color]"
+            >
+              <div class="client__content p-4 bg-[--white] rounded-xl">
+                <div class="client__rating mb-4 text-[--primary-color]">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p class="text-[--text-dark]">
+                  Skywings offered a transformative experience for my research
+                  into historical landmarks. The unique aerial perspectives and
+                  provided a new level of appreciation and insight into the
+                  sites I studied. I highly recommend their services to fellow
+                  historians and cultural enthusiasts.
+                </p>
+              </div>
+              <div class="client__details p-4 flex items-center gap-4">
+                <img
+                  src="assets/client-3.jpg"
+                  class="max-w-[50px] rounded-full"
+                  alt="client"
+                />
+                <div>
+                  <h4
+                    class="text-lg font-semibold text-[--text-dark] duration-300"
+                  >
+                    Sarah Lee
+                  </h4>
+                  <h5
+                    class="text-base font-medium text-[--text-light] duration-300"
+                  >
+                    Cultural Historian
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide col-span-1">
+            <div
+              class="client__card [&:hover_h4]:text-[--white] [&:hover_h5]:text-[--extra-light] p-[5px] bg-[--extra-light] rounded-2xl duration-300 hover:bg-[--primary-color]"
+            >
+              <div class="client__content p-4 bg-[--white] rounded-xl">
+                <div class="client__rating mb-4 text-[--primary-color]">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p class="text-[--text-dark]">
+                  Finding a balance between work and travel can be challenging,
+                  but Skywings made it effortless. Their efficient planning and
+                  excellent recommendations helped me maximize my downtime and
+                  enjoy every moment of my trip. I look forward to working with
+                  them again on future travels.
+                </p>
+              </div>
+              <div class="client__details p-4 flex items-center gap-4">
+                <img
+                  src="assets/client-4.jpg"
+                  class="max-w-[50px] rounded-full"
+                  alt="client"
+                />
+                <div>
+                  <h4
+                    class="text-lg font-semibold text-[--text-dark] duration-300"
+                  >
+                    David Patel
+                  </h4>
+                  <h5
+                    class="text-base font-medium text-[--text-light] duration-300"
+                  >
+                    Business Executive
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="bg-[--extra-light]">
+      <div
+        class="section__container footer__container grid gap-x-4 gap-y-8 sm:grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1.5fr]"
+      >
+        <div class="footer__col col-span-1 md:col-auto">
+          <div class="footer__logo">
+            <a href="#" class="logo text-3xl font-extrabold text-[--text-dark]"
+              >Skywings</a
+            >
+          </div>
+          <p class="max-w-[300px] my-8 text-[--text-light]">
+            Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.
+          </p>
+          <ul
+            class="footer__socials flex items-center gap-4 flex-wrap [&_a]:inline-block [&_a]:p-[7px_10px] [&_a]:text-xl [&_a]:text-[--white] [&_a]:bg-[--primary-color] [&_a]:rounded-full [&_a:hover]:bg-[--primary-color-dark]"
+          >
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col col-span-1 md:col-auto">
+          <h4 class="mb-8 text-xl font-semibold text-[--text-dark]">
+            Quick Links
+          </h4>
+          <ul
+            class="footer__links grid gap-4 text-left text-[--text-light] [&_a:hover]:text-[--primary-color] [&_a_span]:text-xl"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cruise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col col-span-1 md:col-auto">
+          <h4 class="mb-8 text-xl font-semibold text-[--text-dark]">
+            Contact Us
+          </h4>
+          <ul
+            class="footer__links grid gap-4 text-left [&_a]:text-[--text-light] [&_a:hover]:text-[--primary-color] [&_a_span]:text-xl"
+          >
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 9876543210
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@skywings
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> New Delhi, India
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col col-span-1 md:col-auto">
+          <h4 class="mb-8 text-xl font-semibold text-[--text-dark]">
+            Subscribe
+          </h4>
+          <form action="/" class="grid gap-4">
+            <input
+              class="p-3 text-base text-[--text-dark] bg-[--white] border rounded-[5px] placeholder:text-[--text-light]"
+              type="text"
+              placeholder="Enter your email"
+            />
+            <button
+              class="btn rounded-[5px] w-full bg-[--primary-color] py-3 text-lg font-semibold hover:text-[--white]"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar p-4 text-base text-[--text-light] text-center">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
