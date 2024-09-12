@@ -15,9 +15,9 @@
     </style>
   </head>
   <body>
-    <div class="w-full bg-gray-100">
+    <div class="bg-gray-100">
       <div class="flex container mx-auto">
-        <div id="SideBar" class="w-fit h-full flex flex-col">
+        <div id="SideBar" class="h-full">
           <div class="bg-[#aa8453] size-20 flex items-center justify-center">
             <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
             <svg
@@ -36,28 +36,37 @@
             </svg>
           </div>
 
-          <div class="w-full h-full bg-white">
-            <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-            <svg
-              id="Layer_1"
-              style="enable-background: new 0 0 512 512"
-              version="1.1"
-              viewBox="0 0 512 512"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              class="size-10 mx-auto"
+          <div
+            class="w-full min-h-[calc(800px-5rem)] flex items-end py-8 bg-white relative"
+          >
+            <h1
+              class="text-center text-2xl font-bold text-[#aa8453] -rotate-90 absolute top-1/2 -trasnlate-y-1/2"
             >
-              <path
-                d="M344.5,298c15-23.6,23.8-51.6,23.8-81.7c0-84.1-68.1-152.3-152.1-152.3C132.1,64,64,132.2,64,216.3  c0,84.1,68.1,152.3,152.1,152.3c30.5,0,58.9-9,82.7-24.4l6.9-4.8L414.3,448l33.7-34.3L339.5,305.1L344.5,298z M301.4,131.2  c22.7,22.7,35.2,52.9,35.2,85c0,32.1-12.5,62.3-35.2,85c-22.7,22.7-52.9,35.2-85,35.2c-32.1,0-62.3-12.5-85-35.2  c-22.7-22.7-35.2-52.9-35.2-85c0-32.1,12.5-62.3,35.2-85c22.7-22.7,52.9-35.2,85-35.2C248.5,96,278.7,108.5,301.4,131.2z"
-              />
-            </svg>
+              Search
+            </h1>
+            <div class="w-full">
+              <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+              <svg
+                id="Layer_1"
+                style="enable-background: new 0 0 512 512"
+                version="1.1"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="size-10 mx-auto"
+              >
+                <path
+                  d="M344.5,298c15-23.6,23.8-51.6,23.8-81.7c0-84.1-68.1-152.3-152.1-152.3C132.1,64,64,132.2,64,216.3  c0,84.1,68.1,152.3,152.1,152.3c30.5,0,58.9-9,82.7-24.4l6.9-4.8L414.3,448l33.7-34.3L339.5,305.1L344.5,298z M301.4,131.2  c22.7,22.7,35.2,52.9,35.2,85c0,32.1-12.5,62.3-35.2,85c-22.7,22.7-52.9,35.2-85,35.2c-32.1,0-62.3-12.5-85-35.2  c-22.7-22.7-35.2-52.9-35.2-85c0-32.1,12.5-62.3,35.2-85c22.7-22.7,52.9-35.2,85-35.2C248.5,96,278.7,108.5,301.4,131.2z"
+                />
+              </svg>
+            </div>
           </div>
         </div>
 
-        <div id="MainContent" class="flex-grow h-fit bg-red-500 relative">
+        <div id="MainContent" class="flex-grow h-fit relative">
           <div
-            class="absolute h-20 top-0 w-full left-0 right-0 flex items-center justify-between box-border px-4 bg-transparent/10"
+            class="absolute h-20 top-0 w-full left-0 right-0 flex items-center justify-between box-border px-8 bg-transparent/10"
           >
             <div class="flex items-center">
               <h1 class="text-2xl font-bold mr-4 text-[#aa8453]">Categories</h1>
@@ -133,7 +142,8 @@
               <p>(+98) 336 334 088</p>
             </div>
           </div>
-          <div class="p-4 flex items-center" id="bg-header">
+
+          <div class="p-8 flex items-center" id="bg-header">
             <div class="space-y-8 w-fit">
               <h3 class="text-2xl text-[#aa8453] font-bold">
                 Cửa hàng mỹ phẩm trực tuyến
@@ -151,12 +161,1032 @@
               </p>
 
               <button
-                class="bg-[#aa8453] w-1/2 text-white py-4 font-semibold text-xl"
+                class="bg-[#aa8453] w-1/2 text-white py-4 font-semibold text-xl rounded hover:text-2xl hover:rounded-2xl transition-all duration-300"
               >
                 Thêm chi tiết
               </button>
             </div>
           </div>
+
+          <div class="flex items-center" id="product1">
+            <div class="flex">
+              <div class="h-fit relative group overflow-hidden">
+                <img
+                  src="/images/product1-1.png"
+                  class="group-hover:scale-110 transition-transform duration-300"
+                  alt=""
+                />
+                <div
+                  class="absolute bottom-0 flex items-end text-white text-center text-lg p-4 bg-gradient-to-t from-orange-300 to-transparent w-full h-1/2"
+                >
+                  <p>01</p>
+                  <p>Chăm sóc mỹ phẩm</p>
+                </div>
+              </div>
+              <div class="h-fit relative group overflow-hidden">
+                <img
+                  src="/images/product1-2.png"
+                  class="group-hover:scale-110 transition-transform duration-300"
+                  alt=""
+                />
+                <div
+                  class="absolute bottom-0 flex items-end text-white text-center text-lg p-4 bg-gradient-to-t from-orange-300 to-transparent w-full h-1/2"
+                >
+                  <p>02</p>
+                  <p>Trang điểm</p>
+                </div>
+              </div>
+              <div class="h-fit relative group overflow-hidden">
+                <img
+                  src="/images/product1-3.png"
+                  class="group-hover:scale-110 transition-transform duration-300"
+                  alt=""
+                />
+                <div
+                  class="absolute bottom-0 flex items-end text-white text-center text-lg p-4 bg-gradient-to-t from-orange-300 to-transparent w-full h-1/2"
+                >
+                  <p>03</p>
+                  <p>Mùi thơm</p>
+                </div>
+              </div>
+              <div class="h-fit relative group overflow-hidden">
+                <img
+                  src="/images/product1-4.png"
+                  class="group-hover:scale-110 transition-transform duration-300"
+                  alt=""
+                />
+                <div
+                  class="absolute bottom-0 flex items-end text-white text-center text-lg p-4 bg-gradient-to-t from-orange-300 to-transparent w-full h-1/2"
+                >
+                  <p>04</p>
+                  <p>Người đàn ông</p>
+                </div>
+              </div>
+              <div class="h-fit relative group overflow-hidden">
+                <img
+                  src="/images/product1-5.png"
+                  class="group-hover:scale-110 transition-transform duration-300"
+                  alt=""
+                />
+                <div
+                  class="absolute bottom-0 flex items-end text-white text-center text-lg p-4 bg-gradient-to-t from-orange-300 to-transparent w-full h-1/2"
+                >
+                  <p>05</p>
+                  <p>Thiết bị làm đẹp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-8 py-16 bg-[#f8f8fa]" id="popular">
+            <div class="flex flex-col">
+              <div class="text-4xl font-semibold">Sản phẩm phổ biến</div>
+              <div class="flex items-center justify-between">
+                <p class="text-lg w-3/5 mt-4">
+                  Đưa việc chăm sóc da của bạn lên một tầm cao mới! Công thức
+                  được thiết kế đặc biệt và các công nghệ được cấp bằng sáng chế
+                  xóa dấu vết của biểu cảm khuôn mặt tích cực và chống lại trọng
+                  lực.
+                </p>
+
+                <div class="flex items-center h-full" id="arrow-product">
+                  <div
+                    class="size-10 border border-[#aa8453] rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      width="7"
+                      height="12"
+                      viewBox="0 0 7 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 0.724528L6.24531 0L0 6L6.24531 12L7 11.2755L1.50938 6L7 0.724528Z"
+                        fill="#AA8453"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="size-10 border border-[#aa8453] ml-3 rounded-full flex items-center justify-center bg-[#aa8453]"
+                  >
+                    <svg
+                      width="7"
+                      height="12"
+                      viewBox="0 0 7 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0.724528L0.754688 0L7 6L0.754688 12L0 11.2755L5.49062 6L0 0.724528Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-8 my-10 grid-cols-6 items-center">
+              <div
+                class="shadow-lg p-4 [&:hover>*]:text-[#aa8453] border-2 border-transparent hover:border-[#aa8453] group"
+              >
+                <div class="relative my-4 overflow-hidden">
+                  <img
+                    src="/images/product2-1.png"
+                    class="group-hover:scale-110 transition-transform"
+                    alt=""
+                  />
+                  <div class="absolute top-2 left-2 flex flex-col">
+                    <p>NEW</p>
+                    <p class="p-1">%</p>
+                    <div class="size-4 rounded-full">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM19.0909 10C19.0909 4.97923 15.0208 0.909091 10 0.909091C4.97923 0.909091 0.909091 4.97923 0.909091 10C0.909091 15.0208 4.97923 19.0909 10 19.0909C15.0208 19.0909 19.0909 15.0208 19.0909 10ZM9.54545 1.81818V5L10 5.90909L10.4545 5V1.81818H9.54545ZM10 12.2727L9.54545 13.1818V18.1818H10.4545V13.1818L10 12.2727ZM10.4545 10.9091C10.4545 10.9091 11.858 12.268 12.0358 13.1571C12.3125 14.5407 14.4632 15.8572 14.4632 15.8572L14.0383 14.7812H15.2299C15.2299 14.7812 13.2793 13.9031 13.0033 12.7459C12.7273 11.5887 11.3636 10.4545 11.3636 10.4545L10.4545 10.9091ZM9.72004 10.9091C9.72004 10.9091 8.31661 12.268 8.13878 13.1571C7.86206 14.5407 5.71136 15.8572 5.71136 15.8572L6.13628 14.7812H4.94465C4.94465 14.7812 6.89533 13.9031 7.17132 12.7459C7.44731 11.5887 8.81095 10.4545 8.81095 10.4545L9.72004 10.9091ZM14.5455 9.54545L13.1818 10.4545H18.1818V9.54545H14.5455ZM1.81818 9.54545V10.4545H6.81818L5.45455 9.54545H1.81818ZM10 10.4545C10.251 10.4545 10.4545 10.251 10.4545 10C10.4545 9.74896 10.251 9.54545 10 9.54545C9.74896 9.54545 9.54545 9.74896 9.54545 10C9.54545 10.251 9.74896 10.4545 10 10.4545ZM14.7547 5.24103C12.1172 2.60351 10.2601 7.81751 10.2601 7.81751L10.5815 9.42457C10.5815 9.42457 12.5034 4.27541 14.1171 5.88904C15.7307 7.50266 10.5815 9.42457 10.5815 9.42457L12.1886 9.74598C12.1886 9.74598 17.3922 7.87856 14.7547 5.24103ZM5.24103 5.2453C2.60351 7.88282 7.81751 9.73989 7.81751 9.73989L9.42457 9.41848C9.42457 9.41848 4.27541 7.49656 5.88904 5.88294C7.50266 4.26932 9.42457 9.41848 9.42457 9.41848L9.74598 7.81141C9.74598 7.81141 7.87856 2.60777 5.24103 5.2453Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div
+                    class="absolute top-2 right-2 size-8 rounded-full flex items-center justify-center border group-hover:border-[#aa8453] transition-colors p-1"
+                  >
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327
+                      12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361
+                      0.642822C10.8515 0.642822 10.347 0.743206 9.87634
+                      0.938239C9.40564 1.13327 8.97799 1.41913 8.6178
+                      1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193
+                      5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384
+                      1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5
+                      4.52273C0.5 5.55164 0.908735 6.53842 1.63629
+                      7.26597L2.3838 8.01348L7.87028 13.5L13.3568
+                      8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813
+                      14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409
+                      4.52273C15.2409 4.01323 15.1406 3.50872 14.9455
+                      3.03802C14.7505 2.56733 14.4646 2.13967 14.1043
+                      1.77949V1.77949Z" class="group-hover:stroke-[#aa8453]
+                      transition-colors stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl truncate h-8 w-full">Sisley Phyto đỏ</h4>
+                  <p class="uppercase my-4">Sisley</p>
+                  <div class="flex flex-col">
+                    <p class="text-gray-400 line-through text-lg">3840 руб.</p>
+                    <p class="text-2xl text-red-500 font-semibold">2840 руб.</p>
+                  </div>
+                </div>
+                <div
+                  class="w-full py-2 bg-[#aa8453] mt-8 group-hover:text-white text-center text-xl invisible group-hover:visible"
+                >
+                  Thêm vào giỏ
+                </div>
+              </div>
+
+              <div
+                class="shadow-lg p-4 [&:hover>*]:text-[#aa8453] border-2 border-transparent hover:border-[#aa8453] group"
+              >
+                <div class="relative my-4 overflow-hidden">
+                  <img
+                    src="/images/product2-2.png"
+                    class="group-hover:scale-110 transition-transform"
+                    alt=""
+                  />
+                  <div class="absolute top-2 left-2 flex flex-col">
+                    <p>NEW</p>
+                    <p class="p-1">%</p>
+                    <div class="size-4 rounded-full">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM19.0909 10C19.0909 4.97923 15.0208 0.909091 10 0.909091C4.97923 0.909091 0.909091 4.97923 0.909091 10C0.909091 15.0208 4.97923 19.0909 10 19.0909C15.0208 19.0909 19.0909 15.0208 19.0909 10ZM9.54545 1.81818V5L10 5.90909L10.4545 5V1.81818H9.54545ZM10 12.2727L9.54545 13.1818V18.1818H10.4545V13.1818L10 12.2727ZM10.4545 10.9091C10.4545 10.9091 11.858 12.268 12.0358 13.1571C12.3125 14.5407 14.4632 15.8572 14.4632 15.8572L14.0383 14.7812H15.2299C15.2299 14.7812 13.2793 13.9031 13.0033 12.7459C12.7273 11.5887 11.3636 10.4545 11.3636 10.4545L10.4545 10.9091ZM9.72004 10.9091C9.72004 10.9091 8.31661 12.268 8.13878 13.1571C7.86206 14.5407 5.71136 15.8572 5.71136 15.8572L6.13628 14.7812H4.94465C4.94465 14.7812 6.89533 13.9031 7.17132 12.7459C7.44731 11.5887 8.81095 10.4545 8.81095 10.4545L9.72004 10.9091ZM14.5455 9.54545L13.1818 10.4545H18.1818V9.54545H14.5455ZM1.81818 9.54545V10.4545H6.81818L5.45455 9.54545H1.81818ZM10 10.4545C10.251 10.4545 10.4545 10.251 10.4545 10C10.4545 9.74896 10.251 9.54545 10 9.54545C9.74896 9.54545 9.54545 9.74896 9.54545 10C9.54545 10.251 9.74896 10.4545 10 10.4545ZM14.7547 5.24103C12.1172 2.60351 10.2601 7.81751 10.2601 7.81751L10.5815 9.42457C10.5815 9.42457 12.5034 4.27541 14.1171 5.88904C15.7307 7.50266 10.5815 9.42457 10.5815 9.42457L12.1886 9.74598C12.1886 9.74598 17.3922 7.87856 14.7547 5.24103ZM5.24103 5.2453C2.60351 7.88282 7.81751 9.73989 7.81751 9.73989L9.42457 9.41848C9.42457 9.41848 4.27541 7.49656 5.88904 5.88294C7.50266 4.26932 9.42457 9.41848 9.42457 9.41848L9.74598 7.81141C9.74598 7.81141 7.87856 2.60777 5.24103 5.2453Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-2 right-2 size-8 rounded-full flex items-center justify-center border group-hover:border-[#aa8453] transition-colors p-1"
+                  >
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327
+                      12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361
+                      0.642822C10.8515 0.642822 10.347 0.743206 9.87634
+                      0.938239C9.40564 1.13327 8.97799 1.41913 8.6178
+                      1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193
+                      5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384
+                      1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5
+                      4.52273C0.5 5.55164 0.908735 6.53842 1.63629
+                      7.26597L2.3838 8.01348L7.87028 13.5L13.3568
+                      8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813
+                      14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409
+                      4.52273C15.2409 4.01323 15.1406 3.50872 14.9455
+                      3.03802C14.7505 2.56733 14.4646 2.13967 14.1043
+                      1.77949V1.77949Z" class="group-hover:stroke-[#aa8453]
+                      transition-colors stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl truncate h-8 w-full">
+                    Dr.Jart Dermaclear Micro Foam
+                  </h4>
+                  <p class="uppercase my-4">Dr.Jart</p>
+                  <div class="flex flex-col">
+                    <p class="text-gray-400 line-through text-lg">2110 руб.</p>
+                    <p class="text-2xl text-red-500 font-semibold">1890 руб.</p>
+                  </div>
+                </div>
+                <div
+                  class="w-full py-2 bg-[#aa8453] mt-8 group-hover:text-white text-center text-xl invisible group-hover:visible"
+                >
+                  Thêm vào giỏ
+                </div>
+              </div>
+
+              <div
+                class="shadow-lg p-4 [&:hover>*]:text-[#aa8453] border-2 border-transparent hover:border-[#aa8453] group"
+              >
+                <div class="relative my-4 overflow-hidden">
+                  <img
+                    src="/images/product2-3.png"
+                    class="group-hover:scale-110 transition-transform"
+                    alt=""
+                  />
+                  <div class="absolute top-2 left-2 flex flex-col">
+                    <p>NEW</p>
+                    <p class="p-1">%</p>
+                    <div class="size-4 rounded-full">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM19.0909 10C19.0909 4.97923 15.0208 0.909091 10 0.909091C4.97923 0.909091 0.909091 4.97923 0.909091 10C0.909091 15.0208 4.97923 19.0909 10 19.0909C15.0208 19.0909 19.0909 15.0208 19.0909 10ZM9.54545 1.81818V5L10 5.90909L10.4545 5V1.81818H9.54545ZM10 12.2727L9.54545 13.1818V18.1818H10.4545V13.1818L10 12.2727ZM10.4545 10.9091C10.4545 10.9091 11.858 12.268 12.0358 13.1571C12.3125 14.5407 14.4632 15.8572 14.4632 15.8572L14.0383 14.7812H15.2299C15.2299 14.7812 13.2793 13.9031 13.0033 12.7459C12.7273 11.5887 11.3636 10.4545 11.3636 10.4545L10.4545 10.9091ZM9.72004 10.9091C9.72004 10.9091 8.31661 12.268 8.13878 13.1571C7.86206 14.5407 5.71136 15.8572 5.71136 15.8572L6.13628 14.7812H4.94465C4.94465 14.7812 6.89533 13.9031 7.17132 12.7459C7.44731 11.5887 8.81095 10.4545 8.81095 10.4545L9.72004 10.9091ZM14.5455 9.54545L13.1818 10.4545H18.1818V9.54545H14.5455ZM1.81818 9.54545V10.4545H6.81818L5.45455 9.54545H1.81818ZM10 10.4545C10.251 10.4545 10.4545 10.251 10.4545 10C10.4545 9.74896 10.251 9.54545 10 9.54545C9.74896 9.54545 9.54545 9.74896 9.54545 10C9.54545 10.251 9.74896 10.4545 10 10.4545ZM14.7547 5.24103C12.1172 2.60351 10.2601 7.81751 10.2601 7.81751L10.5815 9.42457C10.5815 9.42457 12.5034 4.27541 14.1171 5.88904C15.7307 7.50266 10.5815 9.42457 10.5815 9.42457L12.1886 9.74598C12.1886 9.74598 17.3922 7.87856 14.7547 5.24103ZM5.24103 5.2453C2.60351 7.88282 7.81751 9.73989 7.81751 9.73989L9.42457 9.41848C9.42457 9.41848 4.27541 7.49656 5.88904 5.88294C7.50266 4.26932 9.42457 9.41848 9.42457 9.41848L9.74598 7.81141C9.74598 7.81141 7.87856 2.60777 5.24103 5.2453Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-2 right-2 size-8 rounded-full flex items-center justify-center border group-hover:border-[#aa8453] transition-colors p-1"
+                  >
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327
+                      12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361
+                      0.642822C10.8515 0.642822 10.347 0.743206 9.87634
+                      0.938239C9.40564 1.13327 8.97799 1.41913 8.6178
+                      1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193
+                      5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384
+                      1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5
+                      4.52273C0.5 5.55164 0.908735 6.53842 1.63629
+                      7.26597L2.3838 8.01348L7.87028 13.5L13.3568
+                      8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813
+                      14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409
+                      4.52273C15.2409 4.01323 15.1406 3.50872 14.9455
+                      3.03802C14.7505 2.56733 14.4646 2.13967 14.1043
+                      1.77949V1.77949Z" class="group-hover:stroke-[#aa8453]
+                      transition-colors stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl truncate h-8 w-full">
+                    Dầu gốc Kerastase Elixir Ultime
+                  </h4>
+                  <p class="uppercase my-4">Kerastase</p>
+                  <div class="flex flex-col">
+                    <p class="text-gray-400 line-through text-lg">2560 руб.</p>
+                    <p class="text-2xl text-red-500 font-semibold">1350 руб.</p>
+                  </div>
+                </div>
+                <div
+                  class="w-full py-2 bg-[#aa8453] mt-8 group-hover:text-white text-center text-xl invisible group-hover:visible"
+                >
+                  Thêm vào giỏ
+                </div>
+              </div>
+
+              <div
+                class="shadow-lg p-4 [&:hover>*]:text-[#aa8453] border-2 border-transparent hover:border-[#aa8453] group"
+              >
+                <div class="relative my-4 overflow-hidden">
+                  <img
+                    src="/images/product2-4.png"
+                    class="group-hover:scale-110 transition-transform"
+                    alt=""
+                  />
+                  <div class="absolute top-2 left-2 flex flex-col">
+                    <p>NEW</p>
+                    <p class="p-1">%</p>
+                    <div class="size-4 rounded-full">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM19.0909 10C19.0909 4.97923 15.0208 0.909091 10 0.909091C4.97923 0.909091 0.909091 4.97923 0.909091 10C0.909091 15.0208 4.97923 19.0909 10 19.0909C15.0208 19.0909 19.0909 15.0208 19.0909 10ZM9.54545 1.81818V5L10 5.90909L10.4545 5V1.81818H9.54545ZM10 12.2727L9.54545 13.1818V18.1818H10.4545V13.1818L10 12.2727ZM10.4545 10.9091C10.4545 10.9091 11.858 12.268 12.0358 13.1571C12.3125 14.5407 14.4632 15.8572 14.4632 15.8572L14.0383 14.7812H15.2299C15.2299 14.7812 13.2793 13.9031 13.0033 12.7459C12.7273 11.5887 11.3636 10.4545 11.3636 10.4545L10.4545 10.9091ZM9.72004 10.9091C9.72004 10.9091 8.31661 12.268 8.13878 13.1571C7.86206 14.5407 5.71136 15.8572 5.71136 15.8572L6.13628 14.7812H4.94465C4.94465 14.7812 6.89533 13.9031 7.17132 12.7459C7.44731 11.5887 8.81095 10.4545 8.81095 10.4545L9.72004 10.9091ZM14.5455 9.54545L13.1818 10.4545H18.1818V9.54545H14.5455ZM1.81818 9.54545V10.4545H6.81818L5.45455 9.54545H1.81818ZM10 10.4545C10.251 10.4545 10.4545 10.251 10.4545 10C10.4545 9.74896 10.251 9.54545 10 9.54545C9.74896 9.54545 9.54545 9.74896 9.54545 10C9.54545 10.251 9.74896 10.4545 10 10.4545ZM14.7547 5.24103C12.1172 2.60351 10.2601 7.81751 10.2601 7.81751L10.5815 9.42457C10.5815 9.42457 12.5034 4.27541 14.1171 5.88904C15.7307 7.50266 10.5815 9.42457 10.5815 9.42457L12.1886 9.74598C12.1886 9.74598 17.3922 7.87856 14.7547 5.24103ZM5.24103 5.2453C2.60351 7.88282 7.81751 9.73989 7.81751 9.73989L9.42457 9.41848C9.42457 9.41848 4.27541 7.49656 5.88904 5.88294C7.50266 4.26932 9.42457 9.41848 9.42457 9.41848L9.74598 7.81141C9.74598 7.81141 7.87856 2.60777 5.24103 5.2453Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-2 right-2 size-8 rounded-full flex items-center justify-center border group-hover:border-[#aa8453] transition-colors p-1"
+                  >
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327
+                      12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361
+                      0.642822C10.8515 0.642822 10.347 0.743206 9.87634
+                      0.938239C9.40564 1.13327 8.97799 1.41913 8.6178
+                      1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193
+                      5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384
+                      1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5
+                      4.52273C0.5 5.55164 0.908735 6.53842 1.63629
+                      7.26597L2.3838 8.01348L7.87028 13.5L13.3568
+                      8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813
+                      14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409
+                      4.52273C15.2409 4.01323 15.1406 3.50872 14.9455
+                      3.03802C14.7505 2.56733 14.4646 2.13967 14.1043
+                      1.77949V1.77949Z" class="group-hover:stroke-[#aa8453]
+                      transition-colors stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl truncate h-8 w-full">
+                    Guerlain Mad Eyes Contrast Shadow Duo
+                  </h4>
+                  <p class="uppercase my-4">Guerlain</p>
+                  <div class="flex flex-col">
+                    <p class="text-gray-400 line-through text-lg">2700 руб..</p>
+                    <p class="text-2xl text-red-500 font-semibold">1620 руб.</p>
+                  </div>
+                </div>
+                <div
+                  class="w-full py-2 bg-[#aa8453] mt-8 group-hover:text-white text-center text-xl invisible group-hover:visible"
+                >
+                  Thêm vào giỏ
+                </div>
+              </div>
+
+              <div
+                class="shadow-lg p-4 [&:hover>*]:text-[#aa8453] border-2 border-transparent hover:border-[#aa8453] group"
+              >
+                <div class="relative my-4 overflow-hidden">
+                  <img
+                    src="/images/product2-5.png"
+                    class="group-hover:scale-110 transition-transform"
+                    alt=""
+                  />
+                  <div class="absolute top-2 left-2 flex flex-col">
+                    <p>NEW</p>
+                    <p class="p-1">%</p>
+                    <div class="size-4 rounded-full">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM19.0909 10C19.0909 4.97923 15.0208 0.909091 10 0.909091C4.97923 0.909091 0.909091 4.97923 0.909091 10C0.909091 15.0208 4.97923 19.0909 10 19.0909C15.0208 19.0909 19.0909 15.0208 19.0909 10ZM9.54545 1.81818V5L10 5.90909L10.4545 5V1.81818H9.54545ZM10 12.2727L9.54545 13.1818V18.1818H10.4545V13.1818L10 12.2727ZM10.4545 10.9091C10.4545 10.9091 11.858 12.268 12.0358 13.1571C12.3125 14.5407 14.4632 15.8572 14.4632 15.8572L14.0383 14.7812H15.2299C15.2299 14.7812 13.2793 13.9031 13.0033 12.7459C12.7273 11.5887 11.3636 10.4545 11.3636 10.4545L10.4545 10.9091ZM9.72004 10.9091C9.72004 10.9091 8.31661 12.268 8.13878 13.1571C7.86206 14.5407 5.71136 15.8572 5.71136 15.8572L6.13628 14.7812H4.94465C4.94465 14.7812 6.89533 13.9031 7.17132 12.7459C7.44731 11.5887 8.81095 10.4545 8.81095 10.4545L9.72004 10.9091ZM14.5455 9.54545L13.1818 10.4545H18.1818V9.54545H14.5455ZM1.81818 9.54545V10.4545H6.81818L5.45455 9.54545H1.81818ZM10 10.4545C10.251 10.4545 10.4545 10.251 10.4545 10C10.4545 9.74896 10.251 9.54545 10 9.54545C9.74896 9.54545 9.54545 9.74896 9.54545 10C9.54545 10.251 9.74896 10.4545 10 10.4545ZM14.7547 5.24103C12.1172 2.60351 10.2601 7.81751 10.2601 7.81751L10.5815 9.42457C10.5815 9.42457 12.5034 4.27541 14.1171 5.88904C15.7307 7.50266 10.5815 9.42457 10.5815 9.42457L12.1886 9.74598C12.1886 9.74598 17.3922 7.87856 14.7547 5.24103ZM5.24103 5.2453C2.60351 7.88282 7.81751 9.73989 7.81751 9.73989L9.42457 9.41848C9.42457 9.41848 4.27541 7.49656 5.88904 5.88294C7.50266 4.26932 9.42457 9.41848 9.42457 9.41848L9.74598 7.81141C9.74598 7.81141 7.87856 2.60777 5.24103 5.2453Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-2 right-2 size-8 rounded-full flex items-center justify-center border group-hover:border-[#aa8453] transition-colors p-1"
+                  >
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327
+                      12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361
+                      0.642822C10.8515 0.642822 10.347 0.743206 9.87634
+                      0.938239C9.40564 1.13327 8.97799 1.41913 8.6178
+                      1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193
+                      5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384
+                      1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5
+                      4.52273C0.5 5.55164 0.908735 6.53842 1.63629
+                      7.26597L2.3838 8.01348L7.87028 13.5L13.3568
+                      8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813
+                      14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409
+                      4.52273C15.2409 4.01323 15.1406 3.50872 14.9455
+                      3.03802C14.7505 2.56733 14.4646 2.13967 14.1043
+                      1.77949V1.77949Z" class="group-hover:stroke-[#aa8453]
+                      transition-colors stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl truncate h-8 w-full">
+                    Dior 5 Couleurs Couture
+                  </h4>
+                  <p class="uppercase my-4">DIOR</p>
+                  <div class="flex flex-col">
+                    <p class="text-gray-400 line-through text-lg invisible">
+                      2700 руб..
+                    </p>
+                    <p class="text-2xl text-red-500 font-semibold">
+                      от 2100 руб.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-full py-2 bg-[#aa8453] mt-8 group-hover:text-white text-center text-xl invisible group-hover:visible"
+                >
+                  Thêm vào giỏ
+                </div>
+              </div>
+
+              <div
+                class="shadow-lg p-4 [&:hover>*]:text-[#aa8453] border-2 border-transparent hover:border-[#aa8453] group"
+              >
+                <div class="relative my-4 overflow-hidden">
+                  <img
+                    src="/images/product2-6.png"
+                    class="group-hover:scale-110 transition-transform"
+                    alt=""
+                  />
+                  <div class="absolute top-2 left-2 flex flex-col">
+                    <p>NEW</p>
+                    <p class="p-1">%</p>
+                    <div class="size-4 rounded-full">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM19.0909 10C19.0909 4.97923 15.0208 0.909091 10 0.909091C4.97923 0.909091 0.909091 4.97923 0.909091 10C0.909091 15.0208 4.97923 19.0909 10 19.0909C15.0208 19.0909 19.0909 15.0208 19.0909 10ZM9.54545 1.81818V5L10 5.90909L10.4545 5V1.81818H9.54545ZM10 12.2727L9.54545 13.1818V18.1818H10.4545V13.1818L10 12.2727ZM10.4545 10.9091C10.4545 10.9091 11.858 12.268 12.0358 13.1571C12.3125 14.5407 14.4632 15.8572 14.4632 15.8572L14.0383 14.7812H15.2299C15.2299 14.7812 13.2793 13.9031 13.0033 12.7459C12.7273 11.5887 11.3636 10.4545 11.3636 10.4545L10.4545 10.9091ZM9.72004 10.9091C9.72004 10.9091 8.31661 12.268 8.13878 13.1571C7.86206 14.5407 5.71136 15.8572 5.71136 15.8572L6.13628 14.7812H4.94465C4.94465 14.7812 6.89533 13.9031 7.17132 12.7459C7.44731 11.5887 8.81095 10.4545 8.81095 10.4545L9.72004 10.9091ZM14.5455 9.54545L13.1818 10.4545H18.1818V9.54545H14.5455ZM1.81818 9.54545V10.4545H6.81818L5.45455 9.54545H1.81818ZM10 10.4545C10.251 10.4545 10.4545 10.251 10.4545 10C10.4545 9.74896 10.251 9.54545 10 9.54545C9.74896 9.54545 9.54545 9.74896 9.54545 10C9.54545 10.251 9.74896 10.4545 10 10.4545ZM14.7547 5.24103C12.1172 2.60351 10.2601 7.81751 10.2601 7.81751L10.5815 9.42457C10.5815 9.42457 12.5034 4.27541 14.1171 5.88904C15.7307 7.50266 10.5815 9.42457 10.5815 9.42457L12.1886 9.74598C12.1886 9.74598 17.3922 7.87856 14.7547 5.24103ZM5.24103 5.2453C2.60351 7.88282 7.81751 9.73989 7.81751 9.73989L9.42457 9.41848C9.42457 9.41848 4.27541 7.49656 5.88904 5.88294C7.50266 4.26932 9.42457 9.41848 9.42457 9.41848L9.74598 7.81141C9.74598 7.81141 7.87856 2.60777 5.24103 5.2453Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute top-2 right-2 size-8 rounded-full flex items-center justify-center border group-hover:border-[#aa8453] transition-colors p-1"
+                  >
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327
+                      12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361
+                      0.642822C10.8515 0.642822 10.347 0.743206 9.87634
+                      0.938239C9.40564 1.13327 8.97799 1.41913 8.6178
+                      1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193
+                      5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384
+                      1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5
+                      4.52273C0.5 5.55164 0.908735 6.53842 1.63629
+                      7.26597L2.3838 8.01348L7.87028 13.5L13.3568
+                      8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813
+                      14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409
+                      4.52273C15.2409 4.01323 15.1406 3.50872 14.9455
+                      3.03802C14.7505 2.56733 14.4646 2.13967 14.1043
+                      1.77949V1.77949Z" class="group-hover:stroke-[#aa8453]
+                      transition-colors stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl truncate h-8 w-full">
+                    Jo Malone Wood Sage And Sea Salt Cologne
+                  </h4>
+                  <p class="uppercase my-4">DIOR</p>
+                  <div class="flex flex-col">
+                    <p class="text-gray-400 line-through text-lg invisible">
+                      2700 руб..
+                    </p>
+                    <p class="text-2xl text-red-500 font-semibold">
+                      от 2100 руб.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="w-full py-2 bg-[#aa8453] mt-8 group-hover:text-white text-center text-xl invisible group-hover:visible"
+                >
+                  Thêm vào giỏ
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="p-8 flex items-center justify-start w-full aspect-[4/1] bg-[url(/images/banner.png)] bg-contain bg-no-repeat bg-center"
+          >
+            <div class="flex flex-col items-start">
+              <h4 class="text-5xl">Bán cuối cùng của mùa thu</h4>
+              <button
+                class="mt-8 py-4 px-8 bg-[#aa8453] rounded text-xl font-semibold text-white"
+              >
+                Tìm hiểu thêm
+              </button>
+            </div>
+          </div>
+
+          <div class="p-10 bg-[#f8f8fa] w-full">
+            <div class="flex items-center justify-between my-8">
+              <h4 class="text-4xl font-semibold">Thương hiệu nổi tiếng</h4>
+              <div class="flex items-center h-full" id="arrow-brand">
+                <div
+                  class="size-10 border border-[#aa8453] rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    width="7"
+                    height="12"
+                    viewBox="0 0 7 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 0.724528L6.24531 0L0 6L6.24531 12L7 11.2755L1.50938 6L7 0.724528Z"
+                      fill="#AA8453"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="size-10 border border-[#aa8453] ml-3 rounded-full flex items-center justify-center bg-[#aa8453]"
+                >
+                  <svg
+                    width="7"
+                    height="12"
+                    viewBox="0 0 7 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0.724528L0.754688 0L7 6L0.754688 12L0 11.2755L5.49062 6L0 0.724528Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="my-8 grid grid-cols-5 gap-4 items-center w-full">
+              <img src="/images/brand-1.png" class="mix-blend-" alt="" />
+              <img src="/images/brand-2.png" class="mix-blend-" alt="" />
+              <img src="/images/brand-3.png" class="mix-blend-" alt="" />
+              <img src="/images/brand-4.png" class="mix-blend-" alt="" />
+              <img src="/images/brand-5.png" class="mix-blend-" alt="" />
+            </div>
+
+            <div class="w-full flex justify-center">
+              <button
+                class="px-8 py-2 rounded border border-[#aa8453] text-[#aa8453] hover:text-white hover:bg-[#aa8453] transition-colors"
+              >
+                Tất cả các thương hiệu
+              </button>
+            </div>
+          </div>
+
+          <div class="p-10 bg-[#f8f8fa] w-full">
+            <h4 class="text-4xl font-semibold">Dự án</h4>
+            <div class="flex items-center justify-between">
+              <p class="text-lg w-3/5 mt-4">
+                Đưa việc chăm sóc da của bạn lên một tầm cao mới! Công thức được
+                thiết kế đặc biệt và các công nghệ được cấp bằng sáng chế xóa
+                dấu vết của biểu cảm khuôn mặt tích cực và chống lại trọng lực.
+              </p>
+              <div class="flex items-center h-full" id="arrow-product">
+                <div
+                  class="size-10 border border-[#aa8453] rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    width="7"
+                    height="12"
+                    viewBox="0 0 7 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 0.724528L6.24531 0L0 6L6.24531 12L7 11.2755L1.50938 6L7 0.724528Z"
+                      fill="#AA8453"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="size-10 border border-[#aa8453] ml-3 rounded-full flex items-center justify-center bg-[#aa8453]"
+                >
+                  <svg
+                    width="7"
+                    height="12"
+                    viewBox="0 0 7 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0.724528L0.754688 0L7 6L0.754688 12L0 11.2755L5.49062 6L0 0.724528Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="grid gap-8 my-10 grid-cols-4 items-center">
+              <div class="shadow-lg">
+                <img src="/images/product3-1.png" alt="" class="w-full" />
+                <div class="w-full px-4 py-8 border-[0.5px]">
+                  <h4 class="text-xl font-semibold text-black mb-2">
+                    Lancome La Vie Est Belle Eau de Parfum
+                  </h4>
+                  <p>Mặt nạ siêu dưỡng ẩm trẻ hóa</p>
+                </div>
+              </div>
+              <div class="shadow-lg">
+                <img src="/images/product3-2.png" alt="" class="w-full" />
+                <div class="w-full px-4 py-8 border-[0.5px]">
+                  <h4 class="text-xl font-semibold text-black mb-2">
+                    Guerlain Aqua Allegoria Discovery Set
+                  </h4>
+                  <p>Bộ nước hoa</p>
+                </div>
+              </div>
+              <div class="shadow-lg">
+                <img src="/images/product3-3.png" alt="" class="w-full" />
+                <div class="w-full px-4 py-8 border-[0.5px]">
+                  <h4 class="text-xl font-semibold text-black mb-2">
+                    Lancome L’Absolu Rouge Ruby Cream Holiday Edition
+                  </h4>
+                  <p>Son siêu sắc tố</p>
+                </div>
+              </div>
+              <div class="shadow-lg">
+                <img src="/images/product3-4.png" alt="" class="w-full" />
+                <div class="w-full px-4 py-8 border-[0.5px]">
+                  <h4 class="text-xl font-semibold text-black mb-2">
+                    Makeup Obsession Be In Love With Eyeshadow Palette
+                  </h4>
+                  <p>Bảng phấn mắt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-10 bg-[#f8f8fa] w-full">
+            <h4 class="text-4xl font-semibold">Số liệu của chúng tôi</h4>
+            <div class="grid gap-8 grid-cols-4 mt-8 items-center">
+              <div
+                class="border-2 rounded border-[#aa8453] aspect-[1/0.7] text-[#aa8453] flex flex-col items-center justify-center"
+              >
+                <h1 class="text-2xl font-semibold">
+                  <span class="text-7xl font-bold">15</span> Tuổi
+                </h1>
+                <p class="text-xl font-semibold">Bắt đầu sự nghiệp</p>
+              </div>
+              <div
+                class="border-2 rounded border-[#aa8453] aspect-[1/0.7] text-[#aa8453] flex flex-col items-center justify-center"
+              >
+                <h1 class="text-2xl font-semibold">
+                  <span class="text-7xl font-bold">300</span> Người
+                </h1>
+                <p class="text-xl font-semibold">Làm việc trong công ty</p>
+              </div>
+              <div
+                class="border-2 rounded border-[#aa8453] aspect-[1/0.7] text-[#aa8453] flex flex-col items-center justify-center"
+              >
+                <h1 class="text-2xl font-semibold">
+                  <span class="text-7xl font-bold">876</span> Sản phẩm
+                </h1>
+                <p class="text-xl font-semibold">Bán ra hằng ngày</p>
+              </div>
+              <div
+                class="border-2 rounded border-[#aa8453] aspect-[1/0.7] text-[#aa8453] flex flex-col items-center justify-center"
+              >
+                <h1 class="text-2xl font-semibold">
+                  <span class="text-7xl font-bold">150</span> Sản phẩm mới
+                </h1>
+                <p class="text-xl font-semibold">Mỗi ngày</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="p-8 flex items-center justify-between w-full aspect-[4/1] bg-[url(/images/banner2.png)] bg-contain bg-no-repeat bg-center"
+          >
+            <div class="flex flex-col items-start">
+              <div>
+                <h4 class="text-5xl mb-2">Liên hệ với chúng tôi</h4>
+                <p class="text-xl">
+                  Chúng tôi sẽ tư vấn về tất cả các vấn đề và chuẩn bị một đề
+                  nghị thương mại
+                </p>
+              </div>
+              <button
+                class="mt-8 py-4 px-8 bg-[#aa8453] rounded text-xl font-semibold text-white"
+              >
+                Liên hệ ngay
+              </button>
+            </div>
+
+            <div class="flex items-center h-full">
+              <div
+                class="h-1/2 aspect-[1/1] rounded-full border-2 border-[#aa8453] flex items-center justify-center"
+              >
+                <img src="/images/contact-removebg-preview.png" alt="" />
+              </div>
+              <div class="flex flex-col ml-4">
+                <h4 class="text-2xl font-semibold mb-2">Natalia Safronova</h4>
+                <p class="text-lg font-semibold">Quản lý cửa hàng trực tuyến</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer container -->
+          <footer class="bg-[#f8f8fa] text-center">
+            <div
+              class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between"
+            >
+              <div class="me-12 hidden lg:block">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Social network icons container -->
+              <div class="flex justify-center">
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 320 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                    <path
+                      d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                    />
+                  </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                    <path
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                    />
+                  </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 488 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                    <path
+                      d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                    />
+                  </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 448 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                    <path
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                </a>
+                <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 448 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                    <path
+                      d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                    />
+                  </svg>
+                </a>
+                <a href="#!" class="[&>svg]:h-4 [&>svg]:w-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 496 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+            <div class="mx-6 py-10 text-center md:text-left">
+              <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- TW Elements section -->
+                <div class="">
+                  <h4
+                    class="mb-4 text-2xl text-[#aa8453] flex items-center justify-center font-semibold uppercase md:justify-start"
+                  >
+                    Cosmetics Store
+                  </h4>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Porro, rerum doloremque. Nesciunt nam ab aperiam velit, hic
+                    tenetur beatae magni!
+                  </p>
+                </div>
+                <!-- Products section -->
+                <div>
+                  <h6
+                    class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+                  >
+                    Danh mục mỹ phẩm
+                  </h6>
+                  <p class="mb-4">
+                    <a href="#!">Cổ phiếu</a>
+                  </p>
+                  <p class="mb-4">
+                    <a href="#!">Chương trình khách hàng thân thiết</a>
+                  </p>
+                  <p class="mb-4">
+                    <a href="#!">Vận chuyển & Thanh toán</a>
+                  </p>
+                  <p class="mb-4">
+                    <a href="#!">Đảm bảo</a>
+                  </p>
+                </div>
+                <!-- Useful links section -->
+                <div>
+                  <h6
+                    class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+                  >
+                    Khách hàng
+                  </h6>
+                  <p class="mb-4">
+                    <a href="#!">Dành cho pháp nhân</a>
+                  </p>
+                  <p class="mb-4">
+                    <a href="#!">Cá nhân</a>
+                  </p>
+                  <p class="mb-4">
+                    <a href="#!">Người đẹp</a>
+                  </p>
+                  <p>
+                    <a href="#!">Chương trình liên kết</a>
+                  </p>
+                </div>
+                <!-- Contact section -->
+                <div>
+                  <h6
+                    class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+                  >
+                    Liên hệ
+                  </h6>
+                  <p
+                    class="mb-4 flex items-center justify-center md:justify-start"
+                  >
+                    <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+                        />
+                        <path
+                          d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+                        />
+                      </svg>
+                    </span>
+                    New York, NY 10012, US
+                  </p>
+                  <p
+                    class="mb-4 flex items-center justify-center md:justify-start"
+                  >
+                    <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                        />
+                        <path
+                          d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                        />
+                      </svg>
+                    </span>
+                    info@example.com
+                  </p>
+                  <p
+                    class="mb-4 flex items-center justify-center md:justify-start"
+                  >
+                    <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    + 01 234 567 88
+                  </p>
+                  <p class="flex items-center justify-center md:justify-start">
+                    <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M7.875 1.5C6.839 1.5 6 2.34 6 3.375v2.99c-.426.053-.851.11-1.274.174-1.454.218-2.476 1.483-2.476 2.917v6.294a3 3 0 003 3h.27l-.155 1.705A1.875 1.875 0 007.232 22.5h9.536a1.875 1.875 0 001.867-2.045l-.155-1.705h.27a3 3 0 003-3V9.456c0-1.434-1.022-2.7-2.476-2.917A48.716 48.716 0 0018 6.366V3.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM16.5 6.205v-2.83A.375.375 0 0016.125 3h-8.25a.375.375 0 00-.375.375v2.83a49.353 49.353 0 019 0zm-.217 8.265c.178.018.317.16.333.337l.526 5.784a.375.375 0 01-.374.409H7.232a.375.375 0 01-.374-.409l.526-5.784a.373.373 0 01.333-.337 41.741 41.741 0 018.566 0zm.967-3.97a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H18a.75.75 0 01-.75-.75V10.5zM15 9.75a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V10.5a.75.75 0 00-.75-.75H15z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                    + 01 234 567 89
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--Copyright section-->
+            <div class="bg-black/5 p-6 text-center">
+              <span>© 2023 Copyright:</span>
+              <a class="font-semibold" href="https://tw-elements.com/"
+                >TW Elements</a
+              >
+            </div>
+          </footer>
         </div>
       </div>
     </div>
